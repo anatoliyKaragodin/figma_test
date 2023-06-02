@@ -23,6 +23,7 @@ class MainBodyFavoritesWidget extends StatelessWidget {
     return SizedBox(
       height: Dimensions.height10 * 10.2,
       child: ListView.builder(
+        physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemCount: 4,
           itemBuilder: (BuildContext context, int index) {

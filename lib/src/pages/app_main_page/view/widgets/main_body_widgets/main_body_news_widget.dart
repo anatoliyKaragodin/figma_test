@@ -11,6 +11,7 @@ class MainBodyNewsWidget extends StatelessWidget {
     return SizedBox(
       height: Dimensions.height10 * 18,
       child: ListView.builder(
+        physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemCount: 2,
           itemBuilder: (BuildContext context, int index) {
@@ -28,7 +29,7 @@ class MainBodyNewsWidget extends StatelessWidget {
               child: Stack(children: [
                 Container(
                   height: Dimensions.height10 * 18,
-                  width: Dimensions.width10 * 16,
+                  width: Dimensions.width10 * 18,
                   decoration: BoxDecoration(
                     borderRadius:
                         BorderRadius.circular(Dimensions.height10 * 1.4),
